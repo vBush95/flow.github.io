@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 
 import { motivationQuotes } from "./Quotes";
 import QuoteTypewriter from "./QuoteTypewriter";
@@ -22,4 +22,4 @@ const Motivation = () => {
   );
 };
 
-export default Motivation;
+export default memo(Motivation);
